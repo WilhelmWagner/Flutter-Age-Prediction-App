@@ -1,7 +1,7 @@
 
 # Flutter Age Prediction App
 
-![Screenshots](screenshots.png)
+![Screenshots](assets/images/screenshots.png)
 
 ## Überblick
 
