@@ -47,7 +47,7 @@ Die App wurde sowohl auf **physischen** als auch auf **virtuellen** Geräten get
    ```bash
    flutter run
 ## Screenshots
-_Füge hier Screenshots der App im hellen und dunklen Modus ein._
+![Screenshots](screenshots.png)
 
 ## Sprachen
 - **Deutsch**
