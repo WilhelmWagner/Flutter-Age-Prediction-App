@@ -1,0 +1,18 @@
+{
+  "hello": "Hallo!",
+  "goodbye": "Tschuss",
+  "youReceiveNBouns": "Sie heben {bonus} punkte",
+  "settings": "Einstellungen",
+  "settingsPage": "Einstellungen",
+  "homeTitle": "Start Seite",
+  "failedToFetchDataPleaseTryAgain": "Fehler beim Abrufen der Daten. Bitte versuche es erneut.",
+  "enterName": "Gib deinen Namen ein",
+  "fetchAge": "Alter abrufen",
+  "predictedAge": "Vorhergesagtes Alter: {age}",
+  "reset": "Neustart",
+  "selectLanguage": "Sprache wählen",
+  "theNameIsNotAvailableInTheDesiredCountry": "Name im Land nicht vorhanden.",
+  "selectCountry": "Land wählen",
+  "pleaseEnterAName": "Bitte geben Sie einen Namen ein.",
+  "ageMessage": "Liebe/r {name}, mit großer Wahrscheinlichkeit beträgt dein Alter:"
+}

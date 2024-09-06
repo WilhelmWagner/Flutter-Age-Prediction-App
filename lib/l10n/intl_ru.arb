@@ -1,0 +1,18 @@
+{
+  "hello": "Привет!",
+  "goodbye": "До свидания",
+  "youReceiveNBouns": "Вы получили {bonus} баллов",
+  "settings": "Настройки",
+  "settingsPage": "Страница настроек",
+  "homeTitle": "Главная",
+  "failedToFetchDataPleaseTryAgain": "Не удалось получить данные. Пожалуйста, попробуйте снова.",
+  "enterName": "Введите имя",
+  "fetchAge": "Узнать возраст",
+  "predictedAge": "Предполагаемый возраст: {age}",
+  "reset": "Сбросить",
+  "selectLanguage": "Выберите язык",
+  "theNameIsNotAvailableInTheDesiredCountry": "Имя недоступно в выбранной стране.",
+  "selectCountry": "Выберите страну",
+  "pleaseEnterAName": "Пожалуйста, введите имя.",
+  "ageMessage": "Уважаемый(ая) {name}, с большой вероятностью ваш возраст:"
+}

@@ -1,0 +1,18 @@
+{
+  "hello": "Hello!",
+  "goodbye": "Goodbye",
+  "youReceiveNBouns": "You receive {bonus} points",
+  "settings": "Settings",
+  "settingsPage": "settingsPage",
+  "homeTitle": "Home",
+  "failedToFetchDataPleaseTryAgain": "Failed to fetch data. Please try again.",
+  "enterName": "Enter name",
+  "fetchAge": "Fetch Age",
+  "predictedAge": "Predicted Age: {age}",
+  "reset": "Reset",
+  "selectLanguage": "select Language",
+  "theNameIsNotAvailableInTheDesiredCountry": "The name is not available in the desired country.",
+  "selectCountry": "Select Country",
+  "pleaseEnterAName": "Please enter a name",
+  "ageMessage": "Dear {name}, there is a high probability that your age is:"
+}
