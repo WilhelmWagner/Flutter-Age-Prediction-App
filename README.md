@@ -1,6 +1,8 @@
 
 # Flutter Age Prediction App
 
+![Screenshots](screenshots.png)
+
 ## Überblick
 
 Dieses Projekt ist eine **Flutter-App**, die das Alter einer Person basierend auf einem Namen schätzt. Die App verwendet die [Agify.io API](https://agify.io/), um das vorhergesagte Alter zu ermitteln.
@@ -46,8 +48,6 @@ Die App wurde sowohl auf **physischen** als auch auf **virtuellen** Geräten get
 1. **App starten**:
    ```bash
    flutter run
-## Screenshots
-![Screenshots](screenshots.png)
 
 ## Sprachen
 - **Deutsch**
