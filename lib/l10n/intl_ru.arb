@@ -14,5 +14,8 @@
   "theNameIsNotAvailableInTheDesiredCountry": "Имя недоступно в выбранной стране.",
   "selectCountry": "Выберите страну",
   "pleaseEnterAName": "Пожалуйста, введите имя.",
-  "ageMessage": "Уважаемый(ая) {name}, с большой вероятностью ваш возраст:"
+  "ageMessage": "Уважаемый(ая) {name}, с большой вероятностью ваш возраст:",
+  "name": "Имя: {name} |",
+  "count": "Кол-во: {count} |",
+  "countryId": "Страна: {country_id} |"
 }

@@ -23,13 +23,21 @@ class MessageLookup extends MessageLookupByLibrary {
   static String m0(name) =>
       "Уважаемый(ая) ${name}, с большой вероятностью ваш возраст:";
 
-  static String m1(age) => "Предполагаемый возраст: ${age}";
+  static String m1(count) => "Кол-во: ${count} |";
 
-  static String m2(bonus) => "Вы получили ${bonus} баллов";
+  static String m2(country_id) => "Страна: ${country_id} |";
+
+  static String m3(name) => "Имя: ${name} |";
+
+  static String m4(age) => "Предполагаемый возраст: ${age}";
+
+  static String m5(bonus) => "Вы получили ${bonus} баллов";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "ageMessage": m0,
+        "count": m1,
+        "countryId": m2,
         "enterName": MessageLookupByLibrary.simpleMessage("Введите имя"),
         "failedToFetchDataPleaseTryAgain": MessageLookupByLibrary.simpleMessage(
             "Не удалось получить данные. Пожалуйста, попробуйте снова."),
@@ -37,9 +45,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "goodbye": MessageLookupByLibrary.simpleMessage("До свидания"),
         "hello": MessageLookupByLibrary.simpleMessage("Привет!"),
         "homeTitle": MessageLookupByLibrary.simpleMessage("Главная"),
+        "name": m3,
         "pleaseEnterAName":
             MessageLookupByLibrary.simpleMessage("Пожалуйста, введите имя."),
-        "predictedAge": m1,
+        "predictedAge": m4,
         "reset": MessageLookupByLibrary.simpleMessage("Сбросить"),
         "selectCountry":
             MessageLookupByLibrary.simpleMessage("Выберите страну"),
@@ -50,6 +59,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "theNameIsNotAvailableInTheDesiredCountry":
             MessageLookupByLibrary.simpleMessage(
                 "Имя недоступно в выбранной стране."),
-        "youReceiveNBouns": m2
+        "youReceiveNBouns": m5
       };
 }

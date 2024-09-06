@@ -14,5 +14,8 @@
   "theNameIsNotAvailableInTheDesiredCountry": "Name im Land nicht vorhanden.",
   "selectCountry": "Land wählen",
   "pleaseEnterAName": "Bitte geben Sie einen Namen ein.",
-  "ageMessage": "Liebe/r {name}, mit großer Wahrscheinlichkeit beträgt dein Alter:"
+  "ageMessage": "Liebe/r {name}, mit großer Wahrscheinlichkeit beträgt dein Alter:",
+  "name": "Name: {name} |",
+  "count": "Anzahl: {count} |",
+  "countryId": "Land: {country_id} |"
 }

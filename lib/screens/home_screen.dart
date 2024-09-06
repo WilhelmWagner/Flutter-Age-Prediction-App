@@ -9,7 +9,7 @@ import 'settings_screen.dart';
 class HomeScreen extends StatelessWidget {
   final TextEditingController _controller = TextEditingController();
   final ValueNotifier<String?> selectedCountryCodeNotifier =
-  ValueNotifier<String?>(null);
+      ValueNotifier<String?>(null);
 
   HomeScreen({super.key});
 
@@ -42,8 +42,7 @@ class HomeScreen extends StatelessWidget {
                   AdaptiveTheme.of(context).mode.isDark
                       ? Icons.nightlight_round
                       : Icons.wb_sunny,
-                  color:
-                  AdaptiveTheme.of(context).mode.isDark ? kRed : kYellow,
+                  color: AdaptiveTheme.of(context).mode.isDark ? kRed : kYellow,
                 ),
                 Switch(
                   activeColor: kRed,
@@ -71,7 +70,8 @@ class HomeScreen extends StatelessWidget {
             children: <Widget>[
               // Oberer Bereich für das Bild
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.3, // Dynamische Höhe
+                height:
+                    MediaQuery.of(context).size.height * 0.3, // Dynamische Höhe
                 width: double.infinity,
                 child: Image.asset(
                   imagePath,
@@ -87,15 +87,15 @@ class HomeScreen extends StatelessWidget {
                     TextField(
                       controller: _controller,
                       decoration:
-                      InputDecoration(labelText: S.of(context).enterName),
+                          InputDecoration(labelText: S.of(context).enterName),
                     ),
                     const SizedBox(height: kSizedBoxHeight),
                     ValueListenableBuilder<String?>(
                       valueListenable: selectedCountryCodeNotifier,
                       builder: (context, selectedCountryCode, _) {
                         return DropdownButton<String>(
-                          hint: Text(
-                              selectedCountryCode ?? S.of(context).selectCountry),
+                          hint: Text(selectedCountryCode ??
+                              S.of(context).selectCountry),
                           value: selectedCountryCode,
                           items: worldCountries.map((String countryCode) {
                             return DropdownMenuItem<String>(
@@ -131,7 +131,8 @@ class HomeScreen extends StatelessWidget {
                             // Verstecke die Tastatur, wenn der Button gedrückt wird
                             FocusScope.of(context).unfocus();
                             if (_controller.text.isEmpty) {
-                              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                              ScaffoldMessenger.of(context)
+                                  .showSnackBar(SnackBar(
                                 content: Text(S.of(context).pleaseEnterAName),
                                 duration: const Duration(seconds: 3),
                               ));
@@ -142,7 +143,8 @@ class HomeScreen extends StatelessWidget {
                               final errorMessage =
                                   S.of(context).failedToFetchDataPleaseTryAgain;
                               BlocProvider.of<GetDataFromApiBloc>(context).add(
-                                  FetchAgeEvent(name, countryCode, errorMessage));
+                                  FetchAgeEvent(
+                                      name, countryCode, errorMessage));
                             }
                           },
                           child: Text(S.of(context).fetchAge),
@@ -161,8 +163,10 @@ class HomeScreen extends StatelessWidget {
                         return const CircularProgressIndicator();
                       } else if (state is AgeLoaded) {
                         return Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween, // Elemente verteilen
-                          crossAxisAlignment: CrossAxisAlignment.center, // Zentriere alles horizontal
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          // Elemente verteilen
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          // Zentriere alles horizontal
                           children: [
                             // 1. `ageMessage` oben platzieren
                             Padding(
@@ -175,10 +179,10 @@ class HomeScreen extends StatelessWidget {
                                 textAlign: TextAlign.center,
                               ),
                             ),
-        
+
                             // 2. Spacer für Abstand zwischen Top und Middle
                             const SizedBox(height: kSizedBoxHeight),
-        
+
                             // 3. `state.age` genau in der Mitte platzieren
                             Text(
                               '${state.age}',
@@ -187,10 +191,10 @@ class HomeScreen extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-        
+
                             // 4. Spacer für Abstand zwischen Middle und Bottom
                             const SizedBox(height: kSizedBoxHeight),
-        
+
                             // 5. `Row` unten platzieren
                             Padding(
                               padding: const EdgeInsets.all(kPadding),
@@ -198,17 +202,17 @@ class HomeScreen extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text(
-                                    'Name: ${state.name} |',
+                                    S.of(context).name(state.name),
                                     style: const TextStyle(fontSize: kFontSize),
                                   ),
                                   const SizedBox(width: kSizedBoxWidth),
                                   Text(
-                                    'Anzahl: ${state.count} |',
+                                    S.of(context).count(state.count),
                                     style: const TextStyle(fontSize: kFontSize),
                                   ),
                                   const SizedBox(width: kSizedBoxWidth),
                                   Text(
-                                    'Land: ${state.countryId}',
+                                    S.of(context).countryId(state.countryId),
                                     style: const TextStyle(fontSize: kFontSize),
                                   ),
                                 ],
@@ -218,7 +222,9 @@ class HomeScreen extends StatelessWidget {
                         );
                       } else if (state is AgeError) {
                         return Text(
-                          S.of(context).theNameIsNotAvailableInTheDesiredCountry,
+                          S
+                              .of(context)
+                              .theNameIsNotAvailableInTheDesiredCountry,
                           style: const TextStyle(
                               fontSize: kFontSize, color: Colors.red),
                         );

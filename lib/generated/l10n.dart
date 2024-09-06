@@ -209,6 +209,36 @@ class S {
       args: [name],
     );
   }
+
+  /// `Name: {name} |`
+  String name(Object name) {
+    return Intl.message(
+      'Name: $name |',
+      name: 'name',
+      desc: '',
+      args: [name],
+    );
+  }
+
+  /// `Count: {count} |`
+  String count(Object count) {
+    return Intl.message(
+      'Count: $count |',
+      name: 'count',
+      desc: '',
+      args: [count],
+    );
+  }
+
+  /// `Country: {country_id} |`
+  String countryId(Object country_id) {
+    return Intl.message(
+      'Country: $country_id |',
+      name: 'countryId',
+      desc: '',
+      args: [country_id],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

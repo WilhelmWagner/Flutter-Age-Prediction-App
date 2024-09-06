@@ -23,13 +23,21 @@ class MessageLookup extends MessageLookupByLibrary {
   static String m0(name) =>
       "Liebe/r ${name}, mit großer Wahrscheinlichkeit beträgt dein Alter:";
 
-  static String m1(age) => "Vorhergesagtes Alter: ${age}";
+  static String m1(count) => "Anzahl: ${count} |";
 
-  static String m2(bonus) => "Sie heben ${bonus} punkte";
+  static String m2(country_id) => "Land: ${country_id} |";
+
+  static String m3(name) => "Name: ${name} |";
+
+  static String m4(age) => "Vorhergesagtes Alter: ${age}";
+
+  static String m5(bonus) => "Sie heben ${bonus} punkte";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "ageMessage": m0,
+        "count": m1,
+        "countryId": m2,
         "enterName":
             MessageLookupByLibrary.simpleMessage("Gib deinen Namen ein"),
         "failedToFetchDataPleaseTryAgain": MessageLookupByLibrary.simpleMessage(
@@ -38,9 +46,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "goodbye": MessageLookupByLibrary.simpleMessage("Tschuss"),
         "hello": MessageLookupByLibrary.simpleMessage("Hallo!"),
         "homeTitle": MessageLookupByLibrary.simpleMessage("Start Seite"),
+        "name": m3,
         "pleaseEnterAName": MessageLookupByLibrary.simpleMessage(
             "Bitte geben Sie einen Namen ein."),
-        "predictedAge": m1,
+        "predictedAge": m4,
         "reset": MessageLookupByLibrary.simpleMessage("Neustart"),
         "selectCountry": MessageLookupByLibrary.simpleMessage("Land wählen"),
         "selectLanguage":
@@ -50,6 +59,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "theNameIsNotAvailableInTheDesiredCountry":
             MessageLookupByLibrary.simpleMessage(
                 "Name im Land nicht vorhanden."),
-        "youReceiveNBouns": m2
+        "youReceiveNBouns": m5
       };
 }
