@@ -22,6 +22,8 @@ Der Benutzer kann einen Namen eingeben und optional ein Land aus einem Dropdown-
 - **Localization**: Mehrsprachigkeit wird durch **Sprachlokalisierung** unterstützt, und die App bietet vollständige Übersetzungen für Deutsch, Englisch und Russisch.
 - **Themes**: Benutzer können zwischen einem hellen und einem dunklen Thema wechseln, je nach ihren Vorlieben.
 
+![Moore-Diagramm](assets/images/diagramm.png)
+
 ## Grafiken
 
 Die in der App verwendeten Grafiken wurden mithilfe von **KI** generiert und anschließend **manuell nachgearbeitet**, um die beste Qualität und Relevanz zu gewährleisten.
