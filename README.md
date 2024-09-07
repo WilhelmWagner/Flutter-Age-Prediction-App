@@ -19,10 +19,9 @@ Der Benutzer kann einen Namen eingeben und optional ein Land aus einem Dropdown-
 ## Technologie
 
 - **State Management**: Die App verwendet **BLoC** (Business Logic Component) als State-Management-Lösung, um die Logik und den Zustand der App zu verwalten.
+  ![Moore-Diagramm](assets/images/diagramm.png)
 - **Localization**: Mehrsprachigkeit wird durch **Sprachlokalisierung** unterstützt, und die App bietet vollständige Übersetzungen für Deutsch, Englisch und Russisch.
 - **Themes**: Benutzer können zwischen einem hellen und einem dunklen Thema wechseln, je nach ihren Vorlieben.
-
-![Moore-Diagramm](assets/images/diagramm.png)
 
 ## Grafiken
 
