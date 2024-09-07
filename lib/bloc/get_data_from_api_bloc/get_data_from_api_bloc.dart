@@ -9,7 +9,7 @@ part 'get_data_from_api_state.dart';
 
 class GetDataFromApiBloc
     extends Bloc<GetDataFromApiEvent, GetDataFromApiState> {
-  GetDataFromApiBloc() : super(GetDataFromApiInitial()) {
+  GetDataFromApiBloc() : super(AgeInitial()) {
     on<FetchAgeEvent>((event, emit) async {
       emit(AgeLoading());
 

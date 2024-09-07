@@ -2,8 +2,6 @@ part of 'get_data_from_api_bloc.dart';
 
 sealed class GetDataFromApiState {}
 
-final class GetDataFromApiInitial extends GetDataFromApiState {}
-
 class AgeInitial extends GetDataFromApiState {}
 
 class AgeLoading extends GetDataFromApiState {}

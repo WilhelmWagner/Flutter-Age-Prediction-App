@@ -230,10 +230,10 @@ class S {
     );
   }
 
-  /// `Country: {country_id} |`
+  /// `Country: {country_id}`
   String countryId(Object country_id) {
     return Intl.message(
-      'Country: $country_id |',
+      'Country: $country_id',
       name: 'countryId',
       desc: '',
       args: [country_id],

@@ -17,5 +17,5 @@
   "ageMessage": "Dear {name}, there is a high probability that your age is:",
   "name": "Name: {name} |",
   "count": "Count: {count} |",
-  "countryId": "Country: {country_id} |"
+  "countryId": "Country: {country_id}"
 }

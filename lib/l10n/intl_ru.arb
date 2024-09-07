@@ -17,5 +17,5 @@
   "ageMessage": "Уважаемый(ая) {name}, с большой вероятностью ваш возраст:",
   "name": "Имя: {name} |",
   "count": "Кол-во: {count} |",
-  "countryId": "Страна: {country_id} |"
+  "countryId": "Страна: {country_id}"
 }

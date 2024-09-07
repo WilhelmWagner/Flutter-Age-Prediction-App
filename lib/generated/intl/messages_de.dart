@@ -25,7 +25,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   static String m1(count) => "Anzahl: ${count} |";
 
-  static String m2(country_id) => "Land: ${country_id} |";
+  static String m2(country_id) => "Land: ${country_id}";
 
   static String m3(name) => "Name: ${name} |";
 

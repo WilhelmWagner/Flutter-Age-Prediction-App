@@ -17,5 +17,5 @@
   "ageMessage": "Liebe/r {name}, mit großer Wahrscheinlichkeit beträgt dein Alter:",
   "name": "Name: {name} |",
   "count": "Anzahl: {count} |",
-  "countryId": "Land: {country_id} |"
+  "countryId": "Land: {country_id}"
 }
