@@ -11,7 +11,7 @@
   "predictedAge": "Predicted Age: {age}",
   "reset": "Reset",
   "selectLanguage": "select Language",
-  "theNameIsNotAvailableInTheDesiredCountry": "The name is not available in the desired country.",
+  "theNameIsNotAvailable": "The name is not available",
   "selectCountry": "Select Country",
   "pleaseEnterAName": "Please enter a name",
   "ageMessage": "Dear {name}, there is a high probability that your age is:",

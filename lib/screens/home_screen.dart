@@ -6,12 +6,26 @@ import '../constants/constants.dart';
 import '../generated/l10n.dart';
 import 'settings_screen.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+
+  const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _controller = TextEditingController();
+
   final ValueNotifier<String?> selectedCountryCodeNotifier =
       ValueNotifier<String?>(null);
 
-  HomeScreen({super.key});
+  @override
+  void dispose() {
+    _controller.dispose();
+    selectedCountryCodeNotifier.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -70,8 +84,8 @@ class HomeScreen extends StatelessWidget {
             children: <Widget>[
               // Oberer Bereich für das Bild
               SizedBox(
-                height:
-                    MediaQuery.of(context).size.height * 0.3, // Dynamische Höhe
+                height: MediaQuery.sizeOf(context).height * 0.3,
+                //MediaQuery.of(context).size.height * 0.3, // Dynamische Höhe
                 width: double.infinity,
                 child: Image.asset(
                   imagePath,
@@ -224,7 +238,7 @@ class HomeScreen extends StatelessWidget {
                         return Text(
                           S
                               .of(context)
-                              .theNameIsNotAvailableInTheDesiredCountry,
+                              .theNameIsNotAvailable,
                           style: const TextStyle(
                               fontSize: kFontSize, color: Colors.red),
                         );

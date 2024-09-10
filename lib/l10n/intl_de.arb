@@ -11,7 +11,7 @@
   "predictedAge": "Vorhergesagtes Alter: {age}",
   "reset": "Neustart",
   "selectLanguage": "Sprache wählen",
-  "theNameIsNotAvailableInTheDesiredCountry": "Name im Land nicht vorhanden.",
+  "theNameIsNotAvailable": "Name im nicht vorhanden.",
   "selectCountry": "Land wählen",
   "pleaseEnterAName": "Bitte geben Sie einen Namen ein.",
   "ageMessage": "Liebe/r {name}, mit großer Wahrscheinlichkeit beträgt dein Alter:",

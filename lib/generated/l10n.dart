@@ -170,11 +170,11 @@ class S {
     );
   }
 
-  /// `The name is not available in the desired country.`
-  String get theNameIsNotAvailableInTheDesiredCountry {
+  /// `The name is not available`
+  String get theNameIsNotAvailable {
     return Intl.message(
-      'The name is not available in the desired country.',
-      name: 'theNameIsNotAvailableInTheDesiredCountry',
+      'The name is not available',
+      name: 'theNameIsNotAvailable',
       desc: '',
       args: [],
     );

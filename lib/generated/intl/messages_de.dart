@@ -56,9 +56,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Sprache wählen"),
         "settings": MessageLookupByLibrary.simpleMessage("Einstellungen"),
         "settingsPage": MessageLookupByLibrary.simpleMessage("Einstellungen"),
-        "theNameIsNotAvailableInTheDesiredCountry":
-            MessageLookupByLibrary.simpleMessage(
-                "Name im Land nicht vorhanden."),
+        "theNameIsNotAvailable":
+            MessageLookupByLibrary.simpleMessage("Name im nicht vorhanden."),
         "youReceiveNBouns": m5
       };
 }

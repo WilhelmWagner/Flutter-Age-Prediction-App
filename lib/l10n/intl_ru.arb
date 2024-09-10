@@ -11,7 +11,7 @@
   "predictedAge": "Предполагаемый возраст: {age}",
   "reset": "Сбросить",
   "selectLanguage": "Выберите язык",
-  "theNameIsNotAvailableInTheDesiredCountry": "Имя недоступно в выбранной стране.",
+  "theNameIsNotAvailable": "Имя недоступно.",
   "selectCountry": "Выберите страну",
   "pleaseEnterAName": "Пожалуйста, введите имя.",
   "ageMessage": "Уважаемый(ая) {name}, с большой вероятностью ваш возраст:",
